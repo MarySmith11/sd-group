@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=4c93232c-1066-44cf-93c4-f5741a6bb2f4"></script>
+    <title>SD GROUP</title>
+</head>
+
+<body class="page">
+    <header class="header content-width">
+        <div class="header__top">
+            <div class="header__top-inner content-width">
+                <div class="header__left">
+                    <button class="header__menu-button header__menu-button_type_burger">
+                        <svg class="header__menu-button-open-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23 15"
+                            width="23" height="15" fill="#f9f0ec">
+                            <rect width="23" height="3" rx="1.5" />
+                            <rect y="12" width="23" height="3" rx="1.5" />
+                            <rect y="6" width="10" height="3" rx="1.5" />
+                            <rect x="13" y="6" width="10" height="3" rx="1.5" />
+                        </svg>
+                        <svg class="header__menu-button-close-svg" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <rect x="2.12109" width="23" height="3" rx="1.5" transform="rotate(45 2.12109 0)" fill="#E2D4CD"/>
+                            <rect y="16.1318" width="22.8139" height="3.18644" rx="1.59322" transform="rotate(-45 0 16.1318)" fill="#E2D4CD"/>
+                        </svg>
+                        <span class="header__menu-button-text">меню</span></button>
+                    <a href="#" class="header__button"><span class="header__button-mobile-text">ход
+                            строительства</span><span class="header__button-desktop-text">строительство</span></a>
+                </div>
+                <div class="header__logo"></div>
+                <div class="header__right">
+                    <a href="#" class="header__phone"><span class="header__phone-number">+7 383 200 90 90</span>
+                        <svg class="header__phone-pic" viewBox="0 0 16 15" xmlns="http://www.w3.org/2000/svg" width="16"
+                            height="15" fill="none">
+                            <path
+                                d="M3.3 0c.318.064.623.155.877.355l.106.086 2.158 2.013c.531.502.623 1.191.249 1.765a1.33 1.33 0 0 1-.712.543c-.442.148-.782.401-.973.81a1.17 1.17 0 0 0-.062.838c.215.752.657 1.382 1.196 1.959.646.693 1.385 1.28 2.275 1.687.371.17.754.318 1.183.262.567-.073 1-.331 1.223-.836.146-.331.324-.628.669-.817.561-.306 1.268-.266 1.748.142l1.272 1.166 1.138 1.085c.45.479.463 1.229.066 1.748a2.48 2.48 0 0 1-.271.3l-1.27 1.19c-.44.433-.984.622-1.606.647-.667.026-1.306-.112-1.931-.309-1.231-.388-2.342-.992-3.393-1.692A21.44 21.44 0 0 1 2.655 8.83C1.686 7.67.856 6.432.343 5.03.12 4.42-.03 3.796.005 3.143c.031-.571.231-1.068.687-1.47L1.811.631C2.131.318 2.476.059 2.955 0H3.3z"
+                                fill="#f9f0ec" />
+                        </svg>
+                    </a>
+                    <button class="header__callback-button"><span>заказать звонок</span></button>
+                </div>
+            </div>
+        </div>
+        <nav class="content-width header-menu__wrap">
+            <ul class="header-menu">
+                <li class="header-menu__item">
+                    <a href="#" class="header-menu__link">компания</a>
+                </li>
+                <li class="header-menu__item">
+                    <a href="#" class="header-menu__link">проекты</a>
+                </li>
+                <li class="header-menu__item">
+                    <a href="#" class="header-menu__link">коммерция</a>
+                </li>
+            </ul>
+            <ul class="header-menu">
+                <li class="header-menu__item">
+                    <a href="#" class="header-menu__link">покупка</a>
+                </li>
+                <li class="header-menu__item">
+                    <a href="#" class="header-menu__link">новости</a>
+                </li>
+                <li class="header-menu__item">
+                    <a href="#" class="header-menu__link header-menu__link_active">контакты</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main contacts content-width">
+        <h1 class="contacts__title wow fadeIn" data-wow-duration="5s">Ждём вас в любом удобном офисе</h1>
+        <div class="contacts__cards">
+            <div class="contacts__card">
+                <p class="contacts__card-title">sd group<br> главный офис</p>
+                <p class="contacts__card-address">630005 г. Новосибирск,<br> Ольги Жилиной, 33, офис 4</p>
+                <p class="contacts__card-phone">+7 383 209 00 25</p>
+                <p class="contacts__card-worktime">пн-пт 9.00 - 18.00, сб 10.00-16.00</p>
+                <a href="mailto:info@sdgroupe.ru" class="contacts__card-email">info@sdgroupe.ru</a>
+                <button class="contacts__map-link" data-id="1"></button>
+            </div>
+            <div class="contacts__card">
+                <p class="contacts__card-title">современник<br> отдел продаж</p>
+                <p class="contacts__card-address">630005 г. Новосибирск,<br> Ольги Жилиной, 33, офис 4</p>
+                <p class="contacts__card-phone">+7 383 363 87 87</p>
+                <p class="contacts__card-worktime">пн-пт 9.00 - 18.00, сб 10.00-16.00</p>
+                <a href="mailto:info@sdgroupe.ru" class="contacts__card-email">sales@sdgroupe.ru</a>
+                <button class="contacts__map-link" data-id="1"></button>
+            </div>
+            <div class="contacts__card">
+                <p class="contacts__card-title">salt park<br> отдел продаж</p>
+                <p class="contacts__card-address">634003 г. Томск,<br> Соляной переулок, 28</p>
+                <p class="contacts__card-phone">+7 382 290 77 00</p>
+                <p class="contacts__card-worktime">пн-пт 9.00 - 18.00, сб 10.00-16.00</p>
+                <a href="mailto:info@sdgroupe.ru" class="contacts__card-email">info@sdgroupe.ru</a>
+                <button class="contacts__map-link" data-id="2"></button>
+            </div>
+        </div>
+        <div id="yamap" class="contacts__map"
+            data-map='{"center":[55.040068,82.934728],"placemarks":[{"id":1,"coords":[55.040068,82.934728],"image":"<%=require(`../images/sdgroup_map.png`)%>","color":"#C0AA9E"},{"id":2,"coords":[56.498605,84.956623],"image":"<%=require(`../images/c-map.png`)%>","color":"#E2D4CD"}]}'>
+        </div>
+        <div class="question">
+            <div class="question__description">
+                <p class="question__description-title">Возникли вопросы?</p>
+                <p class="question__description-text">Наши менеджеры всегда на связи!<br> Оставьте свои контактные
+                    данные и в ближайшее время мы вам перезвоним для уточнения деталей.</p>
+            </div>
+            <form class="question__form">
+                <div class="question__form-input-row">
+                    <div class="question__form-input-wrap">
+                        <input type="text" name="name" class="question__form-input" placeholder="Имя" />
+                    </div>
+                    <div class="question__form-input-wrap">
+                        <input type="text" name="phone" class="question__form-input form__input_type_phone" placeholder="+7 900 000 00 00" />
+                    </div>
+                </div>
+                <div class="question__form-footer">
+                    <button type="submit" class="info-link info-link_place_question">
+                        <span class="info-link__text info-link__text_place_question">У меня возникли вопросы</span>
+                        <span class="info-link__arrow info-link__arrow_place_question">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 10" width="17" height="10"
+                                fill="none">
+                                <path
+                                    d="M16.46 5.46a.65.65 0 0 0 0-.919L12.323.404a.65.65 0 0 0-.919 0 .65.65 0 0 0 0 .919L15.081 5l-3.677 3.677a.65.65 0 0 0 .919.919L16.46 5.46zM0 5.65h16v-1.3H0v1.3z"
+                                    fill="#564b40" />
+                            </svg>
+                        </span>
+                    </button>
+                    <p class="question__form-agreement">При нажатии на кнопку, вы соглашаетесь на обработку персональных
+                        данных</p>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__container-info">
+                <div class="footer__container-info-mobile">
+                    <img src="<%=require('../images/footer-logo.png')%>" alt="" class="footer__container-logo">
+                    <div class="footer__social footer__socials-mobile">
+                        <a href="" class="footer__social-link"><svg viewBox="0 0 22 21" class="footer__social-link-inst"
+                                xmlns="http://www.w3.org/2000/svg" width="22" height="21" fill="none">
+                                <path fill="#f9f0ec"
+                                    d="M15.669 21H5.334c-.444-.068-.884-.162-1.317-.28a5.72 5.72 0 0 1-4.012-5.5V5.793a5.47 5.47 0 0 1 .723-2.805C1.871 1.036 3.588.026 5.851.012h9.307a5.3 5.3 0 0 1 1.16.107c2.357.523 3.861 1.955 4.511 4.277.087.314.118.629.174.943v10.33l-.105.643c-.533 2.355-1.962 3.86-4.285 4.516-.309.086-.63.121-.944.173zM4.746 10.488c-.022 3.154 2.536 5.726 5.734 5.768 3.143.039 5.754-2.553 5.776-5.745a5.77 5.77 0 0 0-1.676-4.068c-1.074-1.081-2.533-1.692-4.057-1.701-3.147-.041-5.748 2.553-5.776 5.745zM18.35 4.394a1.75 1.75 0 0 0-1.748-1.748c-.463 0-.908.184-1.235.512a1.75 1.75 0 0 0-.512 1.236c0 .464.184.908.512 1.236s.772.512 1.236.512a1.75 1.75 0 0 0 1.236-.512c.328-.328.512-.772.512-1.236zm-7.844 10.621a4.51 4.51 0 0 1-2.512-.758c-.744-.496-1.324-1.2-1.667-2.026a4.51 4.51 0 0 1-.259-2.61c.174-.876.604-1.682 1.235-2.314S8.74 6.244 9.616 6.07s1.785-.085 2.611.258a4.52 4.52 0 0 1 2.027 1.665c.496.743.76 1.617.759 2.511a4.52 4.52 0 0 1-4.508 4.511zm6.602-10.626a.51.51 0 0 1-.147.358.52.52 0 0 1-.356.154.52.52 0 0 1-.507-.513.51.51 0 0 1 .496-.498c.066-.001.133.011.194.035s.118.061.166.107.086.102.112.163a.5.5 0 0 1 .041.193z" />
+                            </svg></a>
+                        <a href="" class="footer__social-link"><svg viewBox="0 0 24 17" class="footer__social-link-yt"
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="17" fill="none">
+                                <path
+                                    d="M24 7.007v3.004l-.037.227-.286 3.898c-.092 1.122-1.13 2.177-2.235 2.289l-2.96.296-6.648.277a83.19 83.19 0 0 1-9.162-.556C1.518 16.314.447 15.331.338 14.197L.022 9.736c-.071-2.303.031-4.609.306-6.897C.441 1.736 1.475.685 2.57.592L8.431.11a63.01 63.01 0 0 1 8.035.039l4.9.429c1.137.103 2.195 1.116 2.299 2.25l.294 3.853c.009.113.029.22.041.326zM10.003 4.514V12.5l5.994-3.991-5.994-3.994z"
+                                    fill="#f9f0ec" />
+                            </svg></a>
+                        <a href="" class="footer__social-link"><svg viewBox="0 0 22 18" class="footer__social-link-tg"
+                                xmlns="http://www.w3.org/2000/svg" width="22" height="18" fill="none">
+                                <path
+                                    d="M0 8.193c.187-.373.525-.57.896-.712l4.426-1.668L20.489.118a1.8 1.8 0 0 1 .371-.104c.682-.094 1.159.304 1.14 1.009a7.47 7.47 0 0 1-.209 1.368l-3.136 14.394c-.053.247-.139.485-.255.71-.087.197-.248.354-.449.438a.87.87 0 0 1-.633.014c-.233-.066-.453-.169-.652-.305l-4.719-3.381-.204-.145-.177.154-2.408 2.258a1.18 1.18 0 0 1-.401.265 1.2 1.2 0 0 1-.476.085l.061-.9.293-3.953a.47.47 0 0 1 .143-.281l9.14-8.063c.022-.019.05-.032.064-.056l.165-.316a1.18 1.18 0 0 0-.391-.066 1.26 1.26 0 0 0-.425.191L5.95 10.412c-.092.055-.202.074-.308.052L.806 8.993C.479 8.894.183 8.75 0 8.445v-.251z"
+                                    fill="#f9f0ec" />
+                            </svg></a>
+                    </div>
+                </div>
+                <div class="footer__holder">
+                    <div class="footer__info">
+                        <p class="footer__info-text"><span class="footer__info-text-city">Новосибирск,</span> ул. Ольги
+                            Жилиной, 33, оф. 4</p>
+                        <div class="footer__info-box">
+                            <p class="footer__info-text">+7 383 209 00 25</p>
+                            <p class="footer__info-text footer__info-text_type_email">info@sdgroupe.ru</p>
+                        </div>
+                        <div class="footer__socials footer__socials-desk">
+                            <a href="" class="footer__social-link"><svg viewBox="0 0 22 21"
+                                    class="footer__social-link-inst" xmlns="http://www.w3.org/2000/svg" width="22"
+                                    height="21" fill="none">
+                                    <path fill="#f9f0ec"
+                                        d="M15.669 21H5.334c-.444-.068-.884-.162-1.317-.28a5.72 5.72 0 0 1-4.012-5.5V5.793a5.47 5.47 0 0 1 .723-2.805C1.871 1.036 3.588.026 5.851.012h9.307a5.3 5.3 0 0 1 1.16.107c2.357.523 3.861 1.955 4.511 4.277.087.314.118.629.174.943v10.33l-.105.643c-.533 2.355-1.962 3.86-4.285 4.516-.309.086-.63.121-.944.173zM4.746 10.488c-.022 3.154 2.536 5.726 5.734 5.768 3.143.039 5.754-2.553 5.776-5.745a5.77 5.77 0 0 0-1.676-4.068c-1.074-1.081-2.533-1.692-4.057-1.701-3.147-.041-5.748 2.553-5.776 5.745zM18.35 4.394a1.75 1.75 0 0 0-1.748-1.748c-.463 0-.908.184-1.235.512a1.75 1.75 0 0 0-.512 1.236c0 .464.184.908.512 1.236s.772.512 1.236.512a1.75 1.75 0 0 0 1.236-.512c.328-.328.512-.772.512-1.236zm-7.844 10.621a4.51 4.51 0 0 1-2.512-.758c-.744-.496-1.324-1.2-1.667-2.026a4.51 4.51 0 0 1-.259-2.61c.174-.876.604-1.682 1.235-2.314S8.74 6.244 9.616 6.07s1.785-.085 2.611.258a4.52 4.52 0 0 1 2.027 1.665c.496.743.76 1.617.759 2.511a4.52 4.52 0 0 1-4.508 4.511zm6.602-10.626a.51.51 0 0 1-.147.358.52.52 0 0 1-.356.154.52.52 0 0 1-.507-.513.51.51 0 0 1 .496-.498c.066-.001.133.011.194.035s.118.061.166.107.086.102.112.163a.5.5 0 0 1 .041.193z" />
+                                </svg></a>
+                            <a href="" class="footer__social-link"><svg viewBox="0 0 24 17"
+                                    class="footer__social-link-yt" xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="17" fill="none">
+                                    <path
+                                        d="M24 7.007v3.004l-.037.227-.286 3.898c-.092 1.122-1.13 2.177-2.235 2.289l-2.96.296-6.648.277a83.19 83.19 0 0 1-9.162-.556C1.518 16.314.447 15.331.338 14.197L.022 9.736c-.071-2.303.031-4.609.306-6.897C.441 1.736 1.475.685 2.57.592L8.431.11a63.01 63.01 0 0 1 8.035.039l4.9.429c1.137.103 2.195 1.116 2.299 2.25l.294 3.853c.009.113.029.22.041.326zM10.003 4.514V12.5l5.994-3.991-5.994-3.994z"
+                                        fill="#f9f0ec" />
+                                </svg></a>
+                            <a href="" class="footer__social-link"><svg viewBox="0 0 22 18"
+                                    class="footer__social-link-tg" xmlns="http://www.w3.org/2000/svg" width="22"
+                                    height="18" fill="none">
+                                    <path
+                                        d="M0 8.193c.187-.373.525-.57.896-.712l4.426-1.668L20.489.118a1.8 1.8 0 0 1 .371-.104c.682-.094 1.159.304 1.14 1.009a7.47 7.47 0 0 1-.209 1.368l-3.136 14.394c-.053.247-.139.485-.255.71-.087.197-.248.354-.449.438a.87.87 0 0 1-.633.014c-.233-.066-.453-.169-.652-.305l-4.719-3.381-.204-.145-.177.154-2.408 2.258a1.18 1.18 0 0 1-.401.265 1.2 1.2 0 0 1-.476.085l.061-.9.293-3.953a.47.47 0 0 1 .143-.281l9.14-8.063c.022-.019.05-.032.064-.056l.165-.316a1.18 1.18 0 0 0-.391-.066 1.26 1.26 0 0 0-.425.191L5.95 10.412c-.092.055-.202.074-.308.052L.806 8.993C.479 8.894.183 8.75 0 8.445v-.251z"
+                                        fill="#f9f0ec" />
+                                </svg></a>
+                        </div>
+                    </div>
+                    <nav class="footer__menu">
+                        <ul class="footer__menu-list">
+                            <li>
+                                <a href="#" class="footer__menu-item">Компания</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__menu-item">Документы</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__menu-item">Новости</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__menu-item">Контакты</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__menu-item">Реквизиты</a>
+                            </li>
+                        </ul>
+                        <ul class="footer__menu-list">
+                            <li>
+                                <a href="#" class="footer__menu-item">Проекты</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__menu-item">Коммерция</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__menu-item">Покупка</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="footer__subscription">
+                <h3 class="footer__subscription-caption">Подпишитесь на рассылку и узнавайте&nbsp;первыми о всех акциях
+                </h3>
+                <form action="" class="footer__subscription-form">
+                    <input class="footer__subscription-input" type="tel" id="phone" name="phone"
+                        placeholder="+7 900 000 00 00">
+                    <button type="submit" class="info-link info-link_place_footer">
+                        <span class="info-link__text info-link__text_place_footer">подписаться на
+                            рассылку</span>
+                        <span class="info-link__arrow info-link__arrow_place_footer">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 10" width="17" height="10"
+                                fill="none">
+                                <path
+                                    d="M16.46 5.46a.65.65 0 0 0 0-.919L12.323.404a.65.65 0 0 0-.919 0 .65.65 0 0 0 0 .919L15.081 5l-3.677 3.677a.65.65 0 0 0 .919.919L16.46 5.46zM0 5.65h16v-1.3H0v1.3z"
+                                    fill="#f9f0ec" />
+                            </svg>
+                        </span>
+                    </button>
+                </form>
+                <p class="footer__description-text">При нажатии на кнопку, вы соглашаетесь на&nbsp;обработку
+                    <a href="" class="footer__description-text__link">персональных данных</a>
+                </p>
+            </div>
+        </div>
+        <div class="footer__mobile content-width">
+            <nav class="footer__mobile-menu">
+                <ul class="footer__mobile-menu-list">
+                    <li>
+                        <a href="#" class="footer__mobile-menu-item">Компания</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__mobile-menu-item">Документы</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__mobile-menu-item">Новости</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__mobile-menu-item">Контакты</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__mobile-menu-item">Реквизиты</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__mobile-menu-item">Проекты</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__mobile-menu-item">Коммерция</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__mobile-menu-item">Покупка</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="footer__mobile-box">
+                <p class="footer__copyright">© ГК SD Group 2020 - 2022. Информация, предоставленная на
+                    сайте,
+                    не
+                    является
+                    публичной офертой.</p>
+                <div class="footer__wrap-links">
+                    <a href="" class="footer__wrap-link">Политика конфиденциальности</a>
+                    <p class="footer__author-text">Создание сайта <a href="" class="footer__author-link">BSM
+                            Marketing</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <section class="mobile-menu">
+        <div class="mobile-menu__inner">
+            <ul class="mobile-menu__list">
+                <li class="mobile-menu__list-item">
+                    <a href="#" class="mobile-menu__link mobile-menu__link_active">компания</a>
+                </li>
+                <li class="mobile-menu__list-item">
+                    <a href="#" class="mobile-menu__link">проекты</a>
+                </li>
+                <li class="mobile-menu__list-item">
+                    <a href="#" class="mobile-menu__link">коммерция</a>
+                </li>
+                <li class="mobile-menu__list-item">
+                    <a href="#" class="mobile-menu__link">покупка</a>
+                </li>
+                <li class="mobile-menu__list-item">
+                    <a href="#" class="mobile-menu__link">новости</a>
+                </li>
+                <li class="mobile-menu__list-item">
+                    <a href="#" class="mobile-menu__link">контакты</a>
+                </li>
+            </ul>
+            <a href="#" class="mobile-menu__development-link">Строительство</a>
+            <div class="mobile-menu__contacts">
+                <p class="mobile-menu__address">Новосибирск,<br> ул. Ольги Жилиной, 33, оф. 4</p>
+                <div class="footer__social footer__social_type_burger">
+                    <a href="" class="footer__social-link"><svg viewBox="0 0 22 21" class="footer__social-link-inst"
+                            xmlns="http://www.w3.org/2000/svg" width="22" height="21" fill="none">
+                            <path fill="#f9f0ec"
+                                d="M15.669 21H5.334c-.444-.068-.884-.162-1.317-.28a5.72 5.72 0 0 1-4.012-5.5V5.793a5.47 5.47 0 0 1 .723-2.805C1.871 1.036 3.588.026 5.851.012h9.307a5.3 5.3 0 0 1 1.16.107c2.357.523 3.861 1.955 4.511 4.277.087.314.118.629.174.943v10.33l-.105.643c-.533 2.355-1.962 3.86-4.285 4.516-.309.086-.63.121-.944.173zM4.746 10.488c-.022 3.154 2.536 5.726 5.734 5.768 3.143.039 5.754-2.553 5.776-5.745a5.77 5.77 0 0 0-1.676-4.068c-1.074-1.081-2.533-1.692-4.057-1.701-3.147-.041-5.748 2.553-5.776 5.745zM18.35 4.394a1.75 1.75 0 0 0-1.748-1.748c-.463 0-.908.184-1.235.512a1.75 1.75 0 0 0-.512 1.236c0 .464.184.908.512 1.236s.772.512 1.236.512a1.75 1.75 0 0 0 1.236-.512c.328-.328.512-.772.512-1.236zm-7.844 10.621a4.51 4.51 0 0 1-2.512-.758c-.744-.496-1.324-1.2-1.667-2.026a4.51 4.51 0 0 1-.259-2.61c.174-.876.604-1.682 1.235-2.314S8.74 6.244 9.616 6.07s1.785-.085 2.611.258a4.52 4.52 0 0 1 2.027 1.665c.496.743.76 1.617.759 2.511a4.52 4.52 0 0 1-4.508 4.511zm6.602-10.626a.51.51 0 0 1-.147.358.52.52 0 0 1-.356.154.52.52 0 0 1-.507-.513.51.51 0 0 1 .496-.498c.066-.001.133.011.194.035s.118.061.166.107.086.102.112.163a.5.5 0 0 1 .041.193z" />
+                        </svg></a>
+                    <a href="" class="footer__social-link"><svg viewBox="0 0 24 17" class="footer__social-link-yt"
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="17" fill="none">
+                            <path
+                                d="M24 7.007v3.004l-.037.227-.286 3.898c-.092 1.122-1.13 2.177-2.235 2.289l-2.96.296-6.648.277a83.19 83.19 0 0 1-9.162-.556C1.518 16.314.447 15.331.338 14.197L.022 9.736c-.071-2.303.031-4.609.306-6.897C.441 1.736 1.475.685 2.57.592L8.431.11a63.01 63.01 0 0 1 8.035.039l4.9.429c1.137.103 2.195 1.116 2.299 2.25l.294 3.853c.009.113.029.22.041.326zM10.003 4.514V12.5l5.994-3.991-5.994-3.994z"
+                                fill="#f9f0ec" />
+                        </svg></a>
+                    <a href="" class="footer__social-link"><svg viewBox="0 0 22 18" class="footer__social-link-tg"
+                            xmlns="http://www.w3.org/2000/svg" width="22" height="18" fill="none">
+                            <path
+                                d="M0 8.193c.187-.373.525-.57.896-.712l4.426-1.668L20.489.118a1.8 1.8 0 0 1 .371-.104c.682-.094 1.159.304 1.14 1.009a7.47 7.47 0 0 1-.209 1.368l-3.136 14.394c-.053.247-.139.485-.255.71-.087.197-.248.354-.449.438a.87.87 0 0 1-.633.014c-.233-.066-.453-.169-.652-.305l-4.719-3.381-.204-.145-.177.154-2.408 2.258a1.18 1.18 0 0 1-.401.265 1.2 1.2 0 0 1-.476.085l.061-.9.293-3.953a.47.47 0 0 1 .143-.281l9.14-8.063c.022-.019.05-.032.064-.056l.165-.316a1.18 1.18 0 0 0-.391-.066 1.26 1.26 0 0 0-.425.191L5.95 10.412c-.092.055-.202.074-.308.052L.806 8.993C.479 8.894.183 8.75 0 8.445v-.251z"
+                                fill="#f9f0ec" />
+                        </svg></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="popup popup_type_callback">
+        <div class="popup__container">
+            <div class="popup__title">Контактные данные</div>
+            <form class="form">
+                <div class="form__input-wrap">
+                    <input type="text" class="form__input" placeholder="Имя" />
+                </div>
+                <div class="form__input-wrap">
+                    <input type="text" class="form__input form__input_type_phone" placeholder="Телефон" />
+                </div>
+                <div class="form__input-wrap">
+                    <select class="form__select js-custom-select">
+                        <option>Как вам удобнее получить информацию?</option>
+                        <option>Звонок менеджера</option>
+                        <option>Сообщение в WhatsApp</option>
+                        <option>Сообщение в Telegram</option>
+                    </select>
+                </div>
+                <div class="form__input-wrap">
+                    <input type="text" class="form__input" placeholder="Сообщение" />
+                </div>
+                <p class="form__agreement">При нажатии на кнопку, вы соглашаетесь на обработку персональных данных</p>
+                <button type="submit" class="info-link form__submit">
+                    <span class="info-link__text info-link__text_place_popup">
+                        отправить
+                    </span>
+                    <span class="info-link__arrow info-link__arrow_place_popup">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 10" width="17" height="10" fill="none">
+                            <path
+                                d="M16.46 5.46a.65.65 0 0 0 0-.919L12.323.404a.65.65 0 0 0-.919 0 .65.65 0 0 0 0 .919L15.081 5l-3.677 3.677a.65.65 0 0 0 .919.919L16.46 5.46zM0 5.65h16v-1.3H0v1.3z"
+                                fill="#f9f0ec" />
+                        </svg>
+                    </span>
+                </button>
+            </form>
+            <button class="popup__close-btn">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="2.12109" width="23" height="3" rx="1.5" transform="rotate(45 2.12109 0)" fill="#E2D4CD" />
+                    <rect x="0.691406" y="16.9561" width="23" height="3" rx="1.5"
+                        transform="rotate(-45 0.691406 16.9561)" fill="#E2D4CD" />
+                </svg>
+            </button>
+        </div>
+    </section>
+</body>
+
+</html>

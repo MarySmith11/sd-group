@@ -1,0 +1,136 @@
+.news-detail {
+    padding: 66px 0 118px;
+}
+
+.news-detail__heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 61px;
+}
+
+.news-detail__heading-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 55px;
+    text-transform: uppercase;
+    color: var(--dark-brown-color);
+    margin: 0;
+}
+
+.news-detail__heading-data {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 35px;
+    text-transform: uppercase;
+    color: var(--dark-beige-color);
+    margin: 0;
+}
+
+.news-detail__subtitles {
+    margin-bottom: 67px;
+}
+
+.news-detail__text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 37px;
+    color: var(--dark-brown-color);
+    margin: 0 0 37px;
+}
+
+.news-detail__text:last-of-type {
+    margin: 0;
+}
+
+.news-detail__box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.news-detail__img {
+    object-fit: cover;
+    border-radius: 10px;
+    max-width: 740px;
+    width: 49%;
+    margin-bottom: 40px;
+}
+
+@media screen and (max-width: 1540px) {
+    .news-detail {
+        padding: 41px 0 130px;
+    }
+
+    .news-detail__heading-title {
+        font-size: 25px;
+        line-height: 41px;
+    }
+
+    .news-detail__text {
+        font-size: 18px;
+        line-height: 28px;
+        margin-bottom: 27px;
+    }
+
+    .news-detail__heading {
+        margin-bottom: 26px;
+    }
+
+    .news-detail__subtitles {
+        margin-bottom: 51px;
+    }
+
+}
+
+@media screen and (max-width: 1218px) {
+    .news-detail__heading-data {
+        display: none;
+    }
+
+    .news-detail__heading-title {
+        max-width: 471px;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .news-detail__heading-title {
+        font-size: 17px;
+        line-height: 27px;
+        margin-bottom: 8px;
+    }
+
+    .news-detail__heading-data {
+        display: block;
+        font-size: 15px;
+        line-height: 35px;
+    }
+
+    .news-detail__heading {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 12px;
+    }
+
+    .news-detail__text {
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+    .news-detail__box {
+        flex-direction: column;
+    }
+
+    .news-detail__img {
+        width: 100%;
+        margin-bottom: 17px;
+        border-radius: 5px;
+    }
+
+    .news-detail {
+        padding-bottom: 44px;
+    }
+}

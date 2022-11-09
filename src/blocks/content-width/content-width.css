@@ -1,0 +1,24 @@
+.content-width {
+    max-width: 1560px;
+    padding: 0 20px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+@media screen and (max-width: 1560px) {
+    .content-width {
+    max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 1365px) {
+    .content-width {
+        padding: 0 128px 0;
+    }
+}
+
+@media screen and (max-width: 1020px) {
+    .content-width {
+        padding: 0 28px 0;
+    }
+}

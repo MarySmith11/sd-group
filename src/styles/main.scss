@@ -1,0 +1,61 @@
+@import url(../vendor/normalize.css);
+@import url(../vendor/fonts.css);
+@import url(../vendor/animate.min.css);
+
+@import url(./colors.scss);
+@import url(../blocks/page/page.css);
+@import url(../blocks/content-width/content-width.css);
+@import url(../blocks/header/header.css);
+@import url(../blocks/main/main.css);
+@import url(../blocks/mainpage-gallery/mainpage-gallery.css);
+@import url(../blocks/info-link/info-link.css);
+@import url(../blocks/developer-info/developer-info.css);
+@import url(../blocks/content-page/content-page.css);
+@import url(../blocks/news-detail/news-detail.css);
+@import url(../blocks/news-page/news-page.css);
+@import url(../blocks/projects/projects.css);
+@import url(../blocks/footer/footer.css);
+@import url(../blocks/mobile-menu/mobile-menu.css);
+@import url(../blocks/popup/popup.css);
+@import url(../blocks/form/form.css);
+@import url(../blocks/filter/filter.css);
+@import url(../blocks/commertion/commertion.css);
+@import url(../blocks/contacts/contacts.css);
+@import url(../blocks/question/question.css);
+@import url(../blocks/documents/documents.scss);
+@import url(../blocks/page-title/page-title.scss);
+@import url(../blocks/building/building.scss);
+@import url(../blocks/buy/buy.scss);
+@import url(../blocks/calc/calc.scss);
+@import url(../blocks/progress/progress.scss);
+@import url(../blocks/project/project.scss);
+@import url(../blocks/about-page/about-page.scss);
+@import url(../blocks/fancybox/fancybox.scss);
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+:root {
+    --main-color: #F9F0EC;
+    --beige-color: #E2D4CD;
+    --dark-beige-color: #C0AA9E;
+    --dark-brown-color: #32281E;
+    --brown-color: #564B40;
+}
+
+.mobile-hidden {
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+}

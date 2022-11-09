@@ -1,0 +1,245 @@
+.contacts {}
+
+.contacts__title {
+    font-family: 'New Athena Unicode', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 65px;
+    line-height: 85px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 147px auto 0;
+    max-width: 800px;
+    letter-spacing: 0.01em;
+    margin-bottom: 0 !important;
+}
+
+.contacts__cards {
+    padding-top: 107px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 45px;
+}
+
+.contacts__card {
+    width: 31.5%;
+    border-radius: 10px;
+    border: 2px solid var(--beige-color);
+    padding: 58px 60px 58px 59px;
+    position: relative;
+}
+
+.contacts__card-title {
+    margin: 0 0 35px;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 36px;
+}
+
+.contacts__card-address {
+    margin: 0 0 22px;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.contacts__card-phone {
+    margin: 0;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.contacts__card-worktime {
+    margin: 0 0 29px;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: -0.2px;
+}
+
+.contacts__card-email {
+    margin: 0 0 10px;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    text-decoration: none;
+    color: var(--dark-brown-color);
+}
+
+.contacts__map-link {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: url(../../images/arrow-bottom-gray.svg) no-repeat;
+    position: absolute;
+    right: 44px;
+    top: 40%;
+    height: 22px;
+    width: 5px;
+}
+
+.contacts__map {
+    width: 100%;
+    height: 684px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 136px;
+}
+
+.contacts__map-icon {
+    position: absolute;
+    border-radius: 10px;
+    padding: 9px 12px 5px;
+}
+
+.contacts__map-icon svg {
+    position: absolute;
+    bottom: -9px;
+    left: 10px;
+}
+
+@media screen and (max-width: 1440px) {
+    .contacts__card {
+        padding: 45px 39px 32px 46px;
+    }
+}
+
+@media screen and (max-width: 1365px) {
+    .contacts__title {
+        font-size: 45px;
+        line-height: 59px;
+        max-width: 80%;
+        margin-top: 46px;
+    }
+
+    .contacts__cards {
+        flex-wrap: wrap;
+        padding-top: 67px;
+        margin-bottom: 15px;
+    }
+
+    .contacts__card {
+        width: 48.5%;
+        border: 1px solid var(--beige-color);
+        padding: 45px 39px 32px 46px;
+        border-radius: 5px;
+        margin-bottom: 31px;
+    }
+
+    .contacts__card-title {
+        font-size: 20px;
+        line-height: 32px;
+        margin: 0 0 18px;
+    }
+
+    .contacts__card-address {
+        font-size: 17px;
+        line-height: 27px;
+        margin: 0 0 18px;
+    }
+
+    .contacts__card-phone, .contacts__card-worktime {
+        font-size: 17px;
+        line-height: 30px;
+    }
+
+    .contacts__card-worktime {
+        margin: 0 0 12px;
+    }
+
+    .contacts__map-link {
+        right: 36px;
+        background-size: contain;
+        height: 20px;
+    }
+
+    .contacts__card-email {
+        font-size: 17px;
+        line-height: 30px;
+    }
+
+    .contacts__map {
+        margin: 0 -128px;
+        width: 100vw;
+    }
+}
+
+@media screen and (max-width: 1020px) {
+    .contacts__map {
+        margin: 0 -28px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .contacts__card {
+        width: 100%;
+        padding: 31px 39px 32px 30px;
+        margin-bottom: 17px;
+    }
+
+    .contacts__title {
+        font-size: 26px;
+        line-height: 34px;
+        max-width: 100%;
+        margin-top: 31px;
+    }
+
+    .contacts__cards {
+        padding-top: 44px;
+    }
+
+    .contacts__card-title {
+        font-size: 17px;
+        line-height: 26px;
+    }
+
+    .contacts__card-address {
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+    .contacts__card-phone {
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+    .contacts__card-worktime {
+        font-size: 15px;
+        line-height: 22px;
+        margin: 0 0 23px;
+    }
+
+    .contacts__card-email {
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+    .contacts__map-link {
+        top: 42%;
+        right: 24px;
+    }
+
+    .contacts__map {
+        height: 322px;
+    }
+
+    .contacts__map-icon {
+        padding: 5px 6px 3px;
+    }
+
+    .contacts__map-logo {
+        transform: scale(0.75);
+    }
+}

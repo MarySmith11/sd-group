@@ -1,0 +1,195 @@
+.mainpage-gallery {
+    display: flex;
+    grid-template-columns: 57.3% 1fr;
+    grid-template-rows: 682px 186px 757px;
+    padding: 71px 0 115px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.mainpage-gallery__item {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 868px;
+}
+
+.mainpage-gallery__item:nth-child(n) {
+    flex-basis: 57.3%;
+}
+
+.mainpage-gallery__item:nth-child(2n) {
+    flex-basis: 40%;
+    margin-left: 2%;
+    flex-shrink: 1;
+}
+
+.mainpage-gallery__item:nth-child(1) {
+    grid-column: 1;
+    grid-row: 1/2;
+}
+
+.mainpage-gallery__item:nth-child(2) {
+    grid-column: 2;
+    grid-row: 1/3;
+}
+
+.mainpage-gallery__item:nth-child(3) {
+    grid-column: 1;
+    grid-row: 2/4;
+}
+
+.mainpage-gallery__item:nth-child(4) {
+    grid-column: 2;
+    grid-row: 3/4;
+}
+
+.mainpage-gallery__image {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    display: block;
+    transition: transform 2.5s linear;
+}
+
+.mainpage-gallery__description {
+    position: absolute;
+    border-radius: 10px;
+    bottom: 54px;
+    left: 54px;
+    background: rgba(226, 212, 205, 0.3);
+    backdrop-filter: blur(13px);
+    -webkit-backdrop-filter: blur(3px);
+    min-width: 381px;
+    min-height: 170px;
+    padding: 24px 17px 23px 46px;
+}
+
+.mainpage-gallery__title {
+    font-family: 'New Athena Unicode', sans-serif;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 58px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--main-color);
+    margin: 0 0 6px;
+}
+
+.mainpage-gallery__city {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    color: var(--main-color);
+    margin: 0 0 9px;
+}
+
+.mainpage-gallery__text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    color: var(--main-color);
+    margin: 0;
+}
+
+.mainpage-gallery__item:hover .mainpage-gallery__image{
+    animation: pulse 6s infinite;
+}
+
+@media screen and (max-width: 1365px) {
+    .mainpage-gallery {
+        padding: 13px 0 102px;
+        grid-template-columns: 61.3% 1fr;
+        grid-template-rows: 394px 105px 436px;
+    }
+
+    .mainpage-gallery__item {
+        border-radius: 5px;
+        height: 524px;
+    }
+    
+    .mainpage-gallery__item:nth-child(1n) {
+        flex-basis: 62.5%;
+    }
+
+    .mainpage-gallery__item:nth-child(2n) {
+        margin-left: 3%;
+        flex-basis: 34.4%;
+    }
+
+    .mainpage-gallery__title {
+        font-size: 22px;
+        line-height: 20px;
+    }
+
+    .mainpage-gallery__city {
+        font-size: 15px;
+        line-height: 18px;
+        margin-bottom: 1px;
+    }
+
+    .mainpage-gallery__text {
+        font-size: 15px;
+        line-height: 18px;
+    }
+
+    .mainpage-gallery__description {
+        min-height: 98px;
+        min-width: 226px;
+        bottom: 30px;
+        left: 24px;
+        padding: 17px 11px 10px 23px;
+    }
+
+    .mainpage-gallery__description_size_big {
+        min-width: 243px;
+        padding: 17px 28px 10px 22px;
+        left: 30px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .mainpage-gallery {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        padding-bottom: 48px;
+    }
+
+    .mainpage-gallery__item {
+        border-radius: 5px;
+        margin-bottom: 18px;
+        height: 265px;
+        width: 100% !important;
+        margin-left: 0 !important;
+    }
+
+    .mainpage-gallery__title {
+        font-size: 18px;
+    }
+
+    .mainpage-gallery__city, .mainpage-gallery__text {
+        font-size: 14px;
+    }
+
+    .mainpage-gallery__image {
+        height: 265px;
+    }
+
+    .mainpage-gallery__description {
+        bottom: 21px;
+        min-width: 243px;
+        left: 16px;
+        padding-top: 21px;
+    }
+
+    .mainpage-gallery__description_size_big {
+        padding-top: 22px;
+    }
+
+    .mainpage-gallery__item:last-of-type {
+        margin-bottom: 0;
+    }
+}

@@ -1,0 +1,76 @@
+@import '../../styles/colors.scss';
+
+.page-title {
+    font-family: 'New Athena Unicode', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 65px;
+    line-height: 85px;
+    color: $dark-brown;
+    text-align: center;
+    text-transform: uppercase;
+    max-width: 1260px;
+    letter-spacing: 0.01em;
+    margin: 146px auto 100px;
+
+    @media screen and (max-width: 1365px) {
+        font-size: 45px;
+        line-height: 59px;
+        margin: 46px auto 67px;
+    }
+
+    @media screen and (max-width: 767px) {
+        font-size: 26px;
+        line-height: 34px;
+        margin: 31px -2px 44px;
+    }
+
+    &--about-page {
+        max-width: 60%;
+        margin-bottom: 105px;
+
+        @media screen and (max-width: 1650px) {
+            max-width: 80%;
+            margin-bottom: 56px;
+        }
+
+        @media screen and (max-width: 1365px) {
+            max-width: 100%;
+            margin-bottom: 56px;
+        }
+
+        @media screen and (max-width: 767px) {
+            padding: 0;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 75%;
+            margin-bottom: 45px;
+        }
+    }
+
+    &--building-page {
+        margin-top: 57px;
+        margin-bottom: 44px;
+
+        @media screen and (max-width: 1365px) {
+            margin-top: 46px;
+            margin-bottom: 28px;
+        }
+
+        @media screen and (max-width: 767px) {
+            margin-top: 31px;
+            margin-bottom: 15px;
+        }
+    }
+
+    &--project-page {
+        margin: 59px auto 55px;
+
+        @media screen and (max-width: 1365px) {
+            margin: 46px auto 42px;
+        }
+
+        @media screen and (max-width: 767px) {
+            margin: 31px auto 25px;
+        }
+    }
+}

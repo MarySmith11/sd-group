@@ -1,0 +1,330 @@
+@import '../../styles/colors.scss';
+
+.fancybox {
+    &--translation {
+        .fancybox__backdrop {
+            background: rgba(226, 212, 205, 0.3);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(3px);
+        }
+
+        .fancybox__content {
+            padding: 0;
+            height: 100% !important;
+        }
+
+        .fancybox__slide {
+            padding: 0;
+        }
+
+        .carousel__button {
+            width: 56px;
+            height: 56px;
+            right: 20px !important;
+            top: 20px !important;
+
+            &.is-close {
+                border-radius: 10px;
+                background: $beige;
+
+                svg {
+                    transition: all .3s;
+                }
+
+                &:hover svg {
+                    transform: rotate(90deg);
+                }
+            }
+
+            &:not(.is-close)::before {
+                content: "";
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                position: absolute;
+                border-radius: 50%;
+                box-shadow: inset 0 0 0 1px $main;
+                transition: box-shadow 0.3s ease-in-out;
+            }
+
+            &:not(.is-close):hover::before {
+                box-shadow: inset 0 0 0 28px $main;
+            }
+
+            svg {
+                width: 100%;
+                height: 100%;
+                filter: none;
+                stroke-width: 0;
+            }
+        }
+    }
+
+    &--gallery, &--plan {
+        .has-video .fancybox__content{
+            min-width: 791px !important;
+            max-width: 791px !important;
+            min-height: 524px !important;
+            max-height: 524px !important;
+
+            @media screen and (max-width: 1365px) {
+                min-width: auto !important;
+                max-width: 100% !important;
+                min-height: auto !important;
+                max-height: 100% !important;
+            }
+        }
+
+        .fancybox__backdrop {
+            background: rgba(226, 212, 205, 0.3);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(3px);
+        }
+
+        .carousel__button:not(.is-next, .is-prev) {
+            width: 56px;
+            height: 56px;
+            right: 20px !important;
+            top: 20px !important;
+
+            svg {
+                width: 100%;
+                height: 100%;
+                filter: none;
+                stroke-width: 0;
+            }
+        }
+
+        .carousel__button.is-next {
+            right: 10%;
+
+            @media screen and (max-width: 1635px) {
+                right: 10%;
+            }
+
+            @media screen and (max-width: 1420px) {
+                right: 7%;
+            }
+
+            @media screen and (max-width: 1365px) {
+                right: 20px;
+            }
+        }
+
+        .carousel__button.is-prev {
+            left: 10%;
+
+            @media screen and (max-width: 1635px) {
+                left: 10%;
+            }
+
+            @media screen and (max-width: 1420px) {
+                left: 7%;
+            }
+
+            @media screen and (max-width: 1365px) {
+                left: 20px;
+            }
+        }
+
+        .carousel__button.is-prev,
+        .carousel__button.is-next {
+            width: 64px;
+            height: 64px;
+            border: 1px solid $dark-brown;
+            border-radius: 50%;
+            transition: all 0.3s ease-in-out;
+
+            &::before {
+                content: "";
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                position: absolute;
+                border-radius: 50%;
+                box-shadow: inset 0 0 0 0px $beige;
+                transition: box-shadow 0.3s ease-in-out;
+            }
+
+            &:hover {
+                border: none;
+                
+                &::before {
+                    box-shadow: inset 0 0 0 40px $beige;
+                }
+            }
+
+            @media screen and (max-width: 1365px) {
+                width: 45px;
+                height: 45px;
+            }
+
+            @media screen and (max-width: 767px) {
+                display: none;
+            }
+
+            svg {
+                display: none;
+            }
+
+            &::after {
+                content: '';
+                display: block;
+                position: absolute;
+                width: 22px;
+                height: 10px;
+                background: url(../../images/arrow-right.png);
+            }
+        }
+
+        .carousel__button.is-prev::after {
+            transform: rotate(180deg);
+        }
+
+        .fancybox__image {
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .fancybox__content {
+            position: relative;
+            
+            @media screen and (min-width: 767px) {
+                max-width: 80%;
+            }
+        }
+
+        .fancybox__thumbs {
+            display: none;
+        }
+
+        .fancybox__counter {
+            display: none;
+        }
+
+        .fancybox__slide {
+            @media screen and (max-width: 1365px) {
+                padding-left: 10%;
+                padding-right: 10%;
+            }
+
+            .fancybox__content {
+                background: transparent !important;
+            }
+        }
+
+        .custom-close-button {
+            width: 52px;
+            height: 52px;
+            position: absolute;
+            top: 24px;
+            right: 25px;
+            border: none;
+            background: none;
+            padding: 0;
+            background-color: $main;
+            border-radius: 10px;
+            cursor: pointer;
+            outline: none !important;
+
+            @media screen and (max-width: 1365px) {
+                width: 35px;
+                height: 35px;
+                top: 16px;
+                right: 15px;
+                border-radius: 5px;
+            }
+
+            &--dark {
+                background-color: $beige;
+            }
+
+            svg {
+                width: 100%;
+                height: 100%;
+                transition: all .3s ease-in-out;
+            }
+
+            &:hover {
+                svg {
+                    transform: rotate(90deg);
+                }
+            }
+        }
+
+        .custom-caption {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 35px;
+            color: $dark-brown;
+            margin: 0;
+
+            @media screen and (max-width: 1365px) {
+                font-size: 18px;
+                line-height: 35px;
+            }
+
+            @media screen and (max-width: 767px) {
+                display: block;
+                font-size: 15px;
+                line-height: 35px;
+
+                &-text,
+                &-count {
+                    margin: 0;
+                }
+
+                &-count {
+                    margin-top: -10px;
+                }
+            }
+        }
+
+        .custom-arrow-button {
+            width: 37px;
+            height: 37px;
+            border: 1.3px solid $dark-brown;
+            border-radius: 50%;
+            background: transparent;
+
+            @media screen and (max-width: 767px) {
+                padding: 0;
+            }
+        }
+
+        .mobile-arrows {
+            display: none;
+
+            @media screen and (max-width: 767px) {
+                display: flex;
+                position: absolute;
+                right: 0;
+                bottom: -52px;
+                width: 84px;
+                justify-content: space-between;
+            }
+        }
+    }
+
+    &--plan {
+        .fancybox__slide .fancybox__content {
+            background: $main !important;
+            padding: 10px 70px;
+            border-radius: 10px;
+
+            @media screen and (max-width: 1365px) {
+                padding: 10px 20px;
+            }
+
+            @media screen and (max-width: 1365px) {
+                padding: 10px;
+            }
+        }
+    }
+}

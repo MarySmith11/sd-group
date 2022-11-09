@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url(./fonts/Montserrat/Montserrat-Regular.ttf) format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url(./fonts/Montserrat/Montserrat-Medium.ttf) format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'New Athena Unicode';
+    src: url(./fonts/NewAthenaUnicode/new_athena_unicode.ttf) format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}

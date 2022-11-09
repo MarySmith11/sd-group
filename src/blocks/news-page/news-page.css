@@ -1,0 +1,215 @@
+.news-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 147px 0 138px;
+}
+
+.news-page__title {
+    font-family: 'New Athena Unicode', sans-serif;
+    font-weight: 400;
+    font-size: 65px;
+    line-height: 85px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    color: var(--dark-brown-color);
+    margin: 0 0 100px;
+    max-width: 1260px;
+}
+
+.news-page__container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 26px;
+}
+
+.news-page__item {
+    max-width: 31.5%;
+    overflow: hidden;
+    margin-bottom: 46px;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    margin-right: 2.75%;
+}
+
+.news-page__item:nth-child(3n) {
+    margin-right: 0;
+}
+
+.news-page__item-pic:hover {
+    animation: pulse 6s infinite;
+}
+
+.news-page__item-picture-wrap {
+    height: 315px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.news-page__item-pic {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;    
+}
+
+.news-page__item-date {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 35px;
+    text-transform: uppercase;
+    color: var(--dark-beige-color);
+    margin: 0 0 20px;
+}
+
+.news-page__item-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: var(--dark-brown-color);
+    margin: 0 0 20px;
+}
+
+.news-page__item-text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 35px;
+    color: var(--dark-beige-color);
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin: 0;
+}
+
+.news-page__item-description {
+    padding: 34px 39px 36px;
+    border: 2px solid var(--beige-color);
+    border-radius: 0 0 10px 10px;
+    border-top: none;
+    min-height: 360px;
+}
+
+.news-page__item-link {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1365px) {
+    .news-page__item {
+        max-width: 48.3%;
+        margin-right: 3.4% !important;
+    }
+
+    .news-page__item:nth-child(2n) {
+        margin-right: 0 !important;
+    }
+
+    .news-page {
+        padding: 47px 0 108px;
+    }
+
+    .news-page__title {
+        font-size: 45px;
+        line-height: 59px;
+        margin-bottom: 67px;
+    }
+
+    .news-page__item {
+        border-radius: 5px;
+        margin-bottom: 29px;
+    }
+
+    .news-page__item-picture-wrap {
+        height: 281px;
+    }
+
+    .news-page__item-pic {
+        height: 281px;
+        min-height: 0;
+    }
+
+    .news-page__item-date {
+        font-size: 20px;
+        margin-bottom: 9px;
+    }
+
+    .news-page__item-title {
+        font-size: 20px;
+        line-height: 32px;
+        margin-bottom: 15px;
+    }
+
+    .news-page__item-text {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .news-page__item-description {
+        padding: 29px 28px 33px;
+        border: 1px solid var(--beige-color);
+        min-height: 271px;
+    }
+
+    .news-page__container {
+        margin-bottom: 31px;
+    }
+
+}
+
+@media screen and (max-width: 770px) {
+    .news-page {
+        padding: 31px 0 55px;
+    }
+
+    .news-page__title {
+        font-size: 26px;
+        line-height: 34px;
+        margin-bottom: 44px;
+    }
+
+    .news-page__container {
+        flex-direction: column;
+        margin-bottom: 24px;
+    }
+
+    .news-page__item {
+        max-width: 100%;
+        margin-bottom: 17px;
+        margin-right: 0 !important;
+    }
+
+    .news-page__item-picture-wrap {
+        height: 226px;
+    }
+
+    .news-page__item-pic {
+        height: 226px;
+    }
+
+    .news-page__item-description {
+        padding: 19px 27px 28px;
+        min-height: auto;
+    }
+
+    .news-page__item-date {
+        font-size: 15px;
+        margin-bottom: 3px;
+    }
+
+    .news-page__item-title {
+        font-size: 17px;
+        line-height: 27px;
+        margin-bottom: 9px;
+    }
+
+    .news-page__item-text {
+        font-size: 15px;
+        line-height: 22px;
+    }
+}
